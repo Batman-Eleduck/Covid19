@@ -1,0 +1,41 @@
+digraph root {
+	fontcolor="#2D3436";
+	fontname="Sans-Serif";
+	fontsize=13;
+	label=Workers;
+	nodesep=0.6;
+	pad=2;
+	rankdir=TB;
+	ranksep=0.75;
+	splines=ortho;
+	pnwrkhaj->dekkgzca[ color="#7B8894", dir=forward, fontcolor="#2D3436", fontname="Sans-Serif", fontsize=13 ];
+	tdhrxtxm->otiuraoz[ color="#7B8894", dir=forward, fontcolor="#2D3436", fontname="Sans-Serif", fontsize=13 ];
+	fwdljhge->dekkgzca[ color="#7B8894", dir=forward, fontcolor="#2D3436", fontname="Sans-Serif", fontsize=13 ];
+	otiuraoz->dekkgzca[ color="#7B8894", dir=forward, fontcolor="#2D3436", fontname="Sans-Serif", fontsize=13 ];
+	xxsztybx->dekkgzca[ color="#7B8894", dir=forward, fontcolor="#2D3436", fontname="Sans-Serif", fontsize=13 ];
+	tdhrxtxm->luvxnseq[ color="#7B8894", dir=forward, fontcolor="#2D3436", fontname="Sans-Serif", fontsize=13 ];
+	tdhrxtxm->fwdljhge[ color="#7B8894", dir=forward, fontcolor="#2D3436", fontname="Sans-Serif", fontsize=13 ];
+	luvxnseq->dekkgzca[ color="#7B8894", dir=forward, fontcolor="#2D3436", fontname="Sans-Serif", fontsize=13 ];
+	tdhrxtxm->xxsztybx[ color="#7B8894", dir=forward, fontcolor="#2D3436", fontname="Sans-Serif", fontsize=13 ];
+	tdhrxtxm->pnwrkhaj[ color="#7B8894", dir=forward, fontcolor="#2D3436", fontname="Sans-Serif", fontsize=13 ];
+	subgraph cluster_workers {
+	bgcolor="#E5F5FD";
+	fontcolor="#2D3436";
+	fontname="Sans-Serif";
+	fontsize=12;
+	labeljust=l;
+	pencolor="#AEB6BE";
+	shape=box;
+	style=rounded;
+	fwdljhge [ fixedsize=true, fontcolor="#2D3436", fontname="Sans-Serif", fontsize=13, height=1.7999999999999998, image="assets/aws/compute/ec2.png", imagescale=true, label="worker 2", labelloc=b, shape=none, style=rounded, width=1.4 ];
+	luvxnseq [ fixedsize=true, fontcolor="#2D3436", fontname="Sans-Serif", fontsize=13, height=1.7999999999999998, image="assets/aws/compute/ec2.png", imagescale=true, label="worker 1", labelloc=b, shape=none, style=rounded, width=1.4 ];
+	otiuraoz [ fixedsize=true, fontcolor="#2D3436", fontname="Sans-Serif", fontsize=13, height=1.7999999999999998, image="assets/aws/compute/ec2.png", imagescale=true, label="worker 3", labelloc=b, shape=none, style=rounded, width=1.4 ];
+	pnwrkhaj [ fixedsize=true, fontcolor="#2D3436", fontname="Sans-Serif", fontsize=13, height=1.7999999999999998, image="assets/aws/compute/ec2.png", imagescale=true, label="worker 5", labelloc=b, shape=none, style=rounded, width=1.4 ];
+	xxsztybx [ fixedsize=true, fontcolor="#2D3436", fontname="Sans-Serif", fontsize=13, height=1.7999999999999998, image="assets/aws/compute/ec2.png", imagescale=true, label="worker 4", labelloc=b, shape=none, style=rounded, width=1.4 ];
+
+}
+;
+	dekkgzca [ fixedsize=true, fontcolor="#2D3436", fontname="Sans-Serif", fontsize=13, height=1.7999999999999998, image="assets/aws/database/database.png", imagescale=true, label=db, labelloc=b, shape=none, style=rounded, width=1.4 ];
+	tdhrxtxm [ fixedsize=true, fontcolor="#2D3436", fontname="Sans-Serif", fontsize=13, height=1.7999999999999998, image="assets/aws/network/elastic-load-balancing.png", imagescale=true, label=nlb, labelloc=b, shape=none, style=rounded, width=1.4 ];
+
+}
