@@ -25,12 +25,23 @@ with Diagram("web_service", show=False):
         db_primary - [RDS("replica1"),
                       RDS("replica2")]
 
+    with Cluster("Archive Cluster"):
+        db_archive = RDS("archive")
+
     with Cluster("Data pulling Workers"):
         workers = [ECS("worker1"),
                    ECS("worker2"),
                    ECS("worker3")]
 
+    with Cluster("Data Archive Workers"):
+        archive_workers = [ECS("worker1"),
+                           ECS("worker2"),
+                           ECS("worker3")]
+
     client >> dns >> load_balancer >> servers
     servers >> db_primary
 
     covid_api << workers >> db_primary
+
+    archive_workers >> db_archive
+    servers >> db_archive
